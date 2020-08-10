@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+
+html{
+
+    scroll-behavior: smooth;
+    scrollbar-color: purple;
+    overflow-x: hidden;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+   border: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row{
+
+    background-color: rgb(117, 238, 226);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    margin-top: 35px;
+    background-color: transparent;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nestedCard{
+
+    position: relative;
+    width: 95%;
+    background-color: white;
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nestedCard h1{
+
+    color: black;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.nestedCard h3{
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 350;;
+}
+
+.nestedCard p{
+
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.activeCardStyle{
+
+    border-bottom: 10px rgb(76, 76, 182) solid;
+}
+
+.category1{
+
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(29, 26, 26);
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.category1 .img1{
+ 
+  position: absolute;  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: blur(3px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.nav{
+
+    position: relative;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav div{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #166B8F;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.img2{
+    
+    position: relative;
+    height: 100%;
+    padding-right: 15px;
+}
+.category1-part1{
+
+    position: relative;
+    width: 100%;
+    height: 85%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category1-part1 h1{
+
+    font-family: raleway;
+    color: #00FFE7;
+    margin: 0px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.category1-part1 p{
+
+    font-size: 24px;
+    color: white;
+    font-family: raleway;
+    color: #EDDEDE;
+    font-size: 19px;
+    margin-top: 13px;
+    font-weight: 100;
+    
+}
+
+.category2{
+
+    position: relative;
+    background-color: #23376A;
+    color: white;
+    font-family: raleway;
+    display: flex;
+    justify-content: center;
+    min-height: 30vh;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.category2 img{
+
+    position: relative;
+    width: 70%;
+    opacity: 0.8;
+}
+
+.category2 h1{
+
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.category2 div{
+
+    margin: 50px 0px;
+}
+
+.category2 p{
+
+    font-size: 14px;
+    font-family: helvetica;
+
 }
